@@ -4,7 +4,7 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-    int n, a[n], b[n];
+    int n, a[1000], b[1000];
     double m, fuel = 0;
     cin >> n;
     cin >> m;
@@ -33,7 +33,7 @@ int main(int argc, char const *argv[])
         fuel += (m + fuel) / (b[i] - 1); 
         // cout << fuel << " ";
     }
-    fuel += (m + fuel) / (a[0] - 1); 
-    cout << fuel << " ";
+    fuel += (m + fuel) / (a[0] - 1);
+    cout << fuel;
     return 0;
 }
